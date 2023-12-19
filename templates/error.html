@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title> 
+    <style>
+        body { 
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20231002/pngtree-d-rendering-of-error-cancel-ban-concept-circle-shaped-background-with-image_13543142.png);
+            background-size: cover;
+            text-align: center;
+            color: #f8f8fafb;
+            padding: 50px;
+            margin: 0; 
+        } 
+    </style>
+</head>
+<body>
+    <h1>Error</h1>
+    {% for error_message in error_messages %}
+        <p>{{ error_message }}</p>
+    {% endfor %}
+    <p><a href="/">Go back</a></p>
+</body>
+</html>
