@@ -1046,7 +1046,7 @@ if __name__ == "__main__":
     <p>
         Research shows that increased blood sugar concentration of the mother during pregnancy can negatively affect 
         the health of the baby. Extreme cases of hyperglycemia(high blood glucose), can lead to gestational diabetes 
-        which can affect the baby’s health and even the timing of the baby’s birth(cite). Therefore, box plots were 
+        which can affect the baby’s health and even the timing of the baby’s birth(Zhao et al., 2023). Therefore, box plots were 
         also made for the blood sugar concentrations based on risk level, which are shown in the image below. 
     </p>
 </div>
