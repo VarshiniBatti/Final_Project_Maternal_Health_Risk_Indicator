@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maternal Health Risk Predictor</title>
+
+    <style>
+        body {
+            background-image: url(https://wallpapers.com/images/high/pregnancy-1000-x-600-background-f2fqthcgto21gd9h.webp);
+            background-size: cover;
+            background-position: center;
+            font-family: 'Times New Roman', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            margin-top: 15px; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+            margin-top: 20px; 
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            width: 50%;
+            margin-top: 20px; 
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header-box">
+        <h1>Maternal Health Risk Predictor</h1>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/predict">Predictor</a>
+        <a href="/visualizations">Data Visualizations</a>
+        <a href="/contact_us">Contact Us</a>
+    </nav>
+
+    <div class="container">
+
+        <h2>Please fill out the health information below:</h2>
+
+        <form action="/predict" method="post">
+            <label for="age">Age(years):</label>
+            <input type="text" name="age" required>
+            <br>
+            <label for="bs">Blood Sugar(Bs)(mmol/L):</label>
+            <input type="text" name="bs" required>
+            <br>
+            <label for="systolic_bp">Systolic BP(mmHg):</label>
+            <input type="text" name="systolic_bp" required>
+            <br>
+            <label for="diastolic_bp">Diastolic BP(mmHg):</label>
+            <input type="text" name="diastolic_bp" required>
+            <br>
+            <label for="heart_rate">Heart Rate(beats per minute):</label>
+            <input type="text" name="heart_rate" required>
+            <br>
+            <button type="submit">Predict</button>
+        </form>
+
+        <p><a href="/">Back to Homepage</a></p>
+
+    </div>
+
+</body>
+
+</html>

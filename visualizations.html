@@ -1,0 +1,314 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations</title>
+    
+    <style>
+        body { 
+            background-size: cover;
+            text-align: center;
+            color: #121213fb;
+            padding: 50px;
+            margin: 0; 
+        } 
+        body {
+            background-color: #fbc8f2; 
+            padding: 50px;
+            margin: 0;
+        } 
+        .header-box {
+            background-color: rgba(221, 157, 212, 0.7); 
+            padding: 20px;
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+        }
+
+        h1, h2, p {
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px; 
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px; 
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        } 
+
+        .content-box1 {
+            background-color: rgba(253, 242, 252, 0.952); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: center; 
+            margin-bottom: 20px;
+        }
+
+        .content-box2 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content-box3 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .content-box4 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content-box5 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content-box6 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: center; 
+            margin-bottom: 20px;
+        } 
+        .content-box7 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: center; 
+            margin-bottom: 20px;
+        } 
+        .content-box8 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: left; 
+            margin-bottom: 20px;
+        }
+        .content-box9 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: left; 
+            margin-bottom: 20px;
+        }
+        .content-box10 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: left; 
+            margin-bottom: 20px;
+        } 
+        .content-box11 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .content-box12 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: left; 
+            margin-bottom: 20px;
+        }
+        .content-box13 {
+            background-color: rgba(253, 242, 252, 0.952);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(253, 242, 252, 0.952);
+            text-align: left; 
+            margin-bottom: 20px;
+        }
+        .content-box14 {
+            background-color: rgba(99, 38, 243, 0.403);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(233, 157, 250, 0.545);
+            text-align: left; 
+            margin-bottom: 20px;
+        }
+
+        .graph-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+        }
+
+        .graph {
+            flex: 1;
+            margin: 10px;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+<h1>Data Visualizations</h1>
+<br>
+<br>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/predictor">Predictor</a>
+    <a href="/visualizations">Data Visualizations</a>
+    <a href="/contact_us">Contact Us</a>
+</nav>
+<br>
+<br>
+
+<div class="content-box1">
+    <p>Here are the graphical representations that have been made to examine the dataset.</p>
+</div>
+
+<br> 
+
+<div class="graph">
+    <div class="content-box2">
+    <h2>Data First Look</h2>
+    <img src="{{ url_for('static', filename='graph_1.png') }}" alt="Graph 1" width="500" height="400">
+    <p></p>
+    </div>
+</div> 
+<div class="content-box13">
+    <p>
+        With these plots, it is observed that majority of the women in the dataset were between the ages of 15 and 35 years, 
+        most of the blood sugar concentration levels were in between 6 and 8 mmol/L, 
+        the heart rates were mostly between 62 to 80 bpm, and most of the women had a body 
+        temperature of 98 degrees F. The systolic and diastolic blood pressure graphs are more spread out, with varied values. 
+    </p>
+    </div>
+</div>
+
+<div class="graph-container">
+    <div class="content-box3">
+        <h2>Boxplot of the Age of Women by Risk Level</h2>
+        <img src="{{ url_for('static', filename='graph_5.png') }}" alt="Graph 1", width="500" height="400">
+    </div> 
+
+    <div class="content-box4">
+        <h2>Boxplot of the Blood Sugar of Women by Risk Level</h2>
+        <img src="{{ url_for('static', filename='graph_6.png') }}" alt="Graph 1", width="500" height="400">
+    </div> 
+</div> 
+<div class="content-box12">
+    <p> To check the spread of the data when it comes to ages in different risk level categories, 
+        box plots were constructed for each risk level. The spread for each level shows that women at medium and high risk are women 
+        who also fall between 30 and 50 years of age. There are outliers in the ages, since there are plenty of women that are in 
+        their 60s and 70s and are still at low risk. There are some women who are medium risk who are in their 50s and 60s as well. 
+    </p>
+    <p>
+        Research shows that increased blood sugar concentration of the mother during pregnancy can negatively affect 
+        the health of the baby. Extreme cases of hyperglycemia(high blood glucose), can lead to gestational diabetes 
+        which can affect the baby’s health and even the timing of the baby’s birth(cite). Therefore, box plots were 
+        also made for the blood sugar concentrations based on risk level, which are shown in the image below. 
+    </p>
+</div>
+
+<div class="content-box5">
+        <h2>Correlation Matrix</h2>
+        <img src="{{ url_for('static', filename='graph_7.png') }}" alt="Graph 1", width="500" height="400">
+    </div>  
+    <div class="content-box11">
+        <p> In the matrix, each variable’s correlation to another variable is based on the scale from -1 to 1, with -1 
+            indicating a strong negative correlation and +1 indicating a strong positive correlation. For age, 
+            the strongest and most positive correlation is with blood sugar concentration, which has a correlation of 0.47 
+            and vice versa. The strongest negative correlation for age is with body temperature, with a correlation of -0.26. 
+            For systolic blood pressure, the strongest correlation, at 0.79, is with diastolic blood pressure and vice versa. 
+            The strongest negative correlation for systolic blood pressure and diastolic blood pressure is with body temperature, 
+            with a correlation of -0.29 and -0.26 respectively. For body temperature the strongest positive correlation is with 
+            heart rate, at 0.10. 
+        </p>
+    </div>
+<div class="content-box6">
+        <h2>Feature Importances in Random Forest Model</h2>
+        <img src="{{ url_for('static', filename='graph_8.png') }}" alt="Graph 1", width="500" height="400">
+    </div> 
+    <div class="content-box10">
+        <p> The random forest model was trained and feature importances were extracted, 
+            and the feature with the highest importance was blood sugar concentration, with a feature importance score of 0.369. 
+        </p>
+    </div>
+
+<div class="graph-container">
+    <div class="content-box7">
+        <h2>Confusion Matrix for Random Forest Model</h2>
+        <img src="{{ url_for('static', filename='graph_9.png') }}" alt="Graph 1", width="500" height="400">
+    </div>
+    <div class="content-box8">
+        <h2>Confusion Matrix for XGBoost Model</h2>
+        <img src="{{ url_for('static', filename='graph_10.png') }}" alt="Graph 1", width="500" height="400">
+    </div> 
+</div> 
+<div class="content-box9">
+    <p>Here are the confusion matrices of the random forest model(on the left) and the XGBoost model(to the right). For both models, 
+        the risk levels were label encoded into numeric values. Then, the features were separated from the target variable, which 
+        is the risk level, and then the models were trained and tested on a 80-20 split ratio. 
+    </p> 
+    <p>For the random forest model, The confusion matrix shows that 40 cases were correctly identified as low risk, 
+        64 cases were correctly identified as mid risk, and 64 cases were correctly classified as high risk. 
+        The total cases for the low risk level were 47, for the mid risk level were 80, and high risk level were 76. 
+        The model predicted 46 out of the 47 cases to be low risk, 74 out of 80 cases to be mid risk, and 83 out of 76 cases as 
+        high risk. 
+    </p> 
+    <p>An XGBoost classifier is run for the XGBoost model with multiclass softmax, since there are multiple risk levels in the dataset.
+        In the confusion matrix, the model predicted 41 cases of high risk, 66 cases of low risk, and 64 cases of mid risk correctly. 
+        The model predicted 48 out of the 47 cases to be low risk, 76 out of the 80 cases to be mid risk, and 79 out of the 76 cases 
+        to be high risk.  
+    </p>
+</div>
+<div class="content-box14">
+    <h2>Want more insights into the dataset and the model?</h2>
+    <p>Here is the link to my <a href="https://github.com/VarshiniBatti/Final_Project_Maternal_Health_Risk_Indicator"> Github repository.</a>
+    </p>
+</div>
+</body>
+</html>  
