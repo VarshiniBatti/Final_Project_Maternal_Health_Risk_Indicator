@@ -283,7 +283,7 @@ print(classification_report(y_test_original, y_pred_original))
 
 #confusion matrix 
 cm = confusion_matrix(y_test_original, y_pred_original)
-# Define the desired order of classes
+# order the categories 
 class_order = ['low risk', 'mid risk', 'high risk']
 
 plt.figure(figsize=(8, 6))
