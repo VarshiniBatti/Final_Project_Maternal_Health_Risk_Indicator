@@ -122,7 +122,7 @@ print(new_data.describe())
 print(new_data['RiskLevel'].value_counts())
 #Correlation Matrix
 # Convert 'RiskLevel' to numerical values
-new_data['RiskLevel'] = new_data['RiskLevel'].map({'low risk': 0, 'mid risk': 1, 'high risk': 2})  # Adjust the mapping as needed
+new_data['RiskLevel'] = new_data['RiskLevel'].map({'low risk': 0, 'mid risk': 1, 'high risk': 2}) 
 
 #make correlation matrix 
 correlation_matrix = new_data.corr()
@@ -678,7 +678,7 @@ if __name__ == "__main__":
             background-image: url(https://wallpapers.com/images/high/pregnancy-1000-x-600-background-f2fqthcgto21gd9h.webp);
             background-size: cover;
             background-position: center;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Times New Roman', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -801,8 +801,7 @@ if __name__ == "__main__":
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizations</title>
-    
-    <<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
     <style>
         body { 
             background-size: cover;
@@ -893,9 +892,6 @@ if __name__ == "__main__":
             text-align: center;
             margin-bottom: 20px;
         }
-        /* .content-box4 p {
-            font-size: 30px; 
-        /* } */
         .content-box5 {
             background-color: rgba(253, 242, 252, 0.952);
             padding: 20px;
